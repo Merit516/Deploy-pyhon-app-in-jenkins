@@ -9,7 +9,7 @@ pipeline {
                     sh '''
                         ls
                           docker login -u ${USERNAME} -p ${PASSWORD_iti}
-                          docker build .  -f dockerfile -t merit237/python-app:v5 
+                          docker build .  -t merit237/python-app:v5 
                           docker push merit237/python-app:v5
                     '''
                 } 
