@@ -17,11 +17,11 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh """
+                sh '''
                     kubectl apply -f Deployment/app-ns.yaml
                     kubectl apply -f Deployment/app-deploy.yaml
                     kubectl apply -f Deployment/app-loadbalancer.yaml
-                """
+                '''
             }
         }
     }
