@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: myapp
-          image: docker.io/khalidtarek7/nagato
+          image: merit237/python-app:v5 
           ports:
             - containerPort: 5000
